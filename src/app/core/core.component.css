@@ -1,0 +1,29 @@
+#cdk-overlay-0 {
+    max-width: none !important;
+    width: 450px !important;
+  }
+  .container-fluid {
+    margin: auto;
+    padding: 0px;
+  }
+  
+  .card {
+    border: none;
+    background-color: transparent;
+  }
+  
+  .card-header {
+    /* text-align: center; */
+    font-weight: bold;
+    font-family: Roboto,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    color:#0f3375;
+    font-size: 1.5em;
+    /*background: linear-gradient(120deg,  #e7f5ed, #e7eaf5);*/
+    /* background-color: #e3e9f1; */
+    /*background-color: #f5f7f9;*/
+  }
+  
+  #logo:hover {
+    transform: scale(1.1);
+  }
+  

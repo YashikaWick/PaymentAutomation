@@ -1,1 +1,28 @@
-<p>product-add works!</p>
+<div class="row">
+    <div class="col-sm-10"></div>
+    <div class="col-sm-2">
+        <button class="btn btn-light" (click)="goBack()" style="float: right">
+            <fa-icon [icon]="faBack"></fa-icon>
+            Back
+        </button>
+    </div>
+</div>
+<!-- <div class="row" *ngIf="successMsg || errorMsg">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8" style="text-align: center; font-family: monospace; font-weight: bold">
+        <div class="alert alert-success fade show" *ngIf="successMsg" style="padding: 5px; font-size: 12px;">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <fa-icon [icon]="faClose" aria-hidden="true" [styles]="{'stroke': '#155724', 'color': '#155724'}">
+                </fa-icon>
+            </button>
+            {{successMsg}}</div>
+        <div class="alert alert-danger fade show" *ngIf="errorMsg" style="padding: 5px; font-size: 12px;">
+            {{errorMsg}}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <fa-icon [icon]="faClose" aria-hidden="true" [styles]="{'stroke': '#721c24', 'color': '#721c24'}">
+                </fa-icon>
+            </button>
+        </div>
+    </div>
+    <div class="col-sm-2"></div>
+</div> -->

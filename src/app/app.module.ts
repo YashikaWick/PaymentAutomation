@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CoreComponent } from './core/core.component';
 import { ProductComponent } from './core/product/product.component';
 import { ProductAddComponent } from './core/product/product-add/product-add.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ProductAddComponent } from './core/product/product-add/product-add.comp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

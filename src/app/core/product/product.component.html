@@ -1,1 +1,23 @@
-<p>product works!</p>
+<h1>product works!</h1>
+
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+      <ol class="list-group list-group-flush">
+        <button class="btn btn-info btn-sm btn-block menu" (click)="gotoLink('add')"
+        style="margin-bottom: 10px;">
+          <fa-icon [icon]="faAdd"></fa-icon>&nbsp; Add product
+          <fa-icon [icon]="faRight" style="float: right"></fa-icon>
+        </button>
+  
+        <button class="btn btn-info btn-sm btn-block menu" >
+          <fa-icon [icon]="faView"></fa-icon>&nbsp; View products
+          <fa-icon [icon]="faRight" style="float: right"></fa-icon>
+        </button>
+      </ol>
+    </div>
+    <div class="col-sm-6"></div>
+  </div>
+  
+
+<!-- <app-product-add></app-product-add> -->
