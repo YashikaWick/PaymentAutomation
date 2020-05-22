@@ -22,9 +22,6 @@ export class ProductAddComponent implements OnInit {
   addForm: FormGroup;
   isSubmitted: boolean = false;
 
-  isAudit: boolean = false;
-  isGm: boolean = false;
-
   successMsg: string;
   errorMsg: string;
 
@@ -38,13 +35,13 @@ export class ProductAddComponent implements OnInit {
     this.successMsg = null;
     this.errorMsg = null;
 
-    this.getUserRoles();
+   /*  this.getUserRoles();
 
     this.getStatuses();
 
     this.getManagers();
 
-    /* this.addForm = this.formBuilder.group({
+    this.addForm = this.formBuilder.group({
       empNo: [''],
       username: [''],
       userRole: ['', Validators.required],
@@ -56,7 +53,7 @@ export class ProductAddComponent implements OnInit {
   }
 
   setValidators() {
-    const empNo = this.f.empNo;
+    /* const empNo = this.f.empNo;
     const description = this.f.username;
     const manager = this.f.managerId;
 
@@ -85,7 +82,7 @@ export class ProductAddComponent implements OnInit {
         description.updateValueAndValidity();
         manager.updateValueAndValidity();
       }
-    )
+    ) */
 
   }
 
@@ -179,9 +176,9 @@ export class ProductAddComponent implements OnInit {
 
   onRoleSelect() {
     let role = this.f.userRole.value;
-
+/* 
     this.isAudit = role === 'AUDIT';
-    this.isGm = role === 'GM';
+    this.isGm = role === 'GM'; */
   }
 
   reset() {
