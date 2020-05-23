@@ -8,13 +8,15 @@ import { ProductComponent } from './core/product/product.component';
 import { ProductAddComponent } from './core/product/product-add/product-add.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
+import { ProductSearchComponent } from './core/product/product-search/product-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CoreComponent,
     ProductComponent,
-    ProductAddComponent
+    ProductAddComponent,
+    ProductSearchComponent
   ],
   imports: [
     BrowserModule,
