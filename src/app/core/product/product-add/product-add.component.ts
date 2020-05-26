@@ -3,6 +3,9 @@ import { Router } from '@angular/router';
 import {faBackward, faPlus, faTimes, faUndo} from '@fortawesome/free-solid-svg-icons';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {ThemePalette} from '@angular/material/core';
+import { User } from '../../user';
+import { CoreService } from '../../core.service';
+import { ProductService } from '../../product.service';
 
 
 
@@ -22,34 +25,28 @@ export class ProductAddComponent implements OnInit {
   addForm: FormGroup;
   isSubmitted: boolean = false;
 
+  managers: User[];
+
   successMsg: string;
   errorMsg: string;
 
   isLoading: boolean = true;
   color: ThemePalette = 'accent';
 
-  constructor(private router:Router) { }
+  constructor(private router:Router, 
+    private coreService: CoreService, private productService: ProductService) { }
 
   ngOnInit(): void {
 
     this.successMsg = null;
     this.errorMsg = null;
 
-   /*  this.getUserRoles();
-
-    this.getStatuses();
-
+   /*  
     this.getManagers();
 
-    this.addForm = this.formBuilder.group({
-      empNo: [''],
-      username: [''],
-      userRole: ['', Validators.required],
-      status: ['', Validators.required],
-      managerId: ['']
-    });
+   */
 
-    this.setValidators(); */
+  // this.addForm = this.formBuilder.group({})
   }
 
 

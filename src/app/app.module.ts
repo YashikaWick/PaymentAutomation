@@ -10,6 +10,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
 import { ProductSearchComponent } from './core/product/product-search/product-search.component';
 import { ProductUpdateComponent } from './core/product/product-update/product-update.component';
+import { ProductService } from './core/product.service';
+import { CoreService } from './core/core.service';
+import { AppService } from './app.service';
+import { ProductListComponent } from './core/product/product-list/product-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,9 @@ import { ProductUpdateComponent } from './core/product/product-update/product-up
     ProductComponent,
     ProductAddComponent,
     ProductSearchComponent,
-    ProductUpdateComponent
+    ProductUpdateComponent,
+    ProductListComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -26,7 +32,7 @@ import { ProductUpdateComponent } from './core/product/product-update/product-up
     FontAwesomeModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AppService, ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
