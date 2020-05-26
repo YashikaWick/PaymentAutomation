@@ -18,7 +18,7 @@ export class ProductSearchComponent implements OnInit {
   faBack = faBackward;
   faSearch = faSearch;
 
-  addForm: FormGroup;
+  searchForm: FormGroup;
   isSubmitted: boolean = false;
 
   successMsg: string;
@@ -64,7 +64,7 @@ export class ProductSearchComponent implements OnInit {
   }
 
   reset() {
-    this.addForm.reset({});
+    this.searchForm.reset({});
     this.successMsg = null;
     this.errorMsg = null;
   }

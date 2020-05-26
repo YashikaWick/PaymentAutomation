@@ -9,6 +9,7 @@ import { ProductAddComponent } from './core/product/product-add/product-add.comp
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
 import { ProductSearchComponent } from './core/product/product-search/product-search.component';
+import { ProductUpdateComponent } from './core/product/product-update/product-update.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ProductSearchComponent } from './core/product/product-search/product-se
     CoreComponent,
     ProductComponent,
     ProductAddComponent,
-    ProductSearchComponent
+    ProductSearchComponent,
+    ProductUpdateComponent
   ],
   imports: [
     BrowserModule,

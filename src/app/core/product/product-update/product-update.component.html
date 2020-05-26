@@ -1,0 +1,121 @@
+<div class="row">
+    <div class="col-sm-10"></div>
+    <div class="col-sm-2">
+        <button class="btn btn-light" (click)="goBack()" style="float: right">
+            <fa-icon [icon]="faBack"></fa-icon>
+            Back
+        </button>
+    </div>
+</div>
+<!-- <div class="row" *ngIf="successMsg || errorMsg">
+
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8" style="text-align: center; font-family: monospace; font-weight: bold">
+        <div class="alert alert-success fade show" *ngIf="successMsg" style="padding: 5px; font-size: 12px;">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <fa-icon [icon]="faClose" aria-hidden="true" [styles]="{'stroke': '#155724', 'color': '#155724'}">
+                </fa-icon>
+            </button>
+            {{successMsg}}</div>
+        <div class="alert alert-danger fade show" *ngIf="errorMsg" style="padding: 5px; font-size: 12px;">
+            {{errorMsg}}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <fa-icon [icon]="faClose" aria-hidden="true" [styles]="{'stroke': '#721c24', 'color': '#721c24'}">
+                </fa-icon>
+            </button>
+        </div>
+    </div>
+    <div class="col-sm-2"></div>
+</div> -->
+
+<div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+        <form>
+            <div class="form-group row" style="margin-bottom: 2px !important;">
+                <div class="col-sm-2">
+                    <label class=" col-form-label-sm lbl_left">Product Code</label>
+                    <label class=" col-form-label-sm lbl_left">Product Type</label>
+                </div>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control form-control-sm">
+                    <input type="text" class="form-control form-control-sm">
+                </div>
+                <div class="col-sm-2"></div>
+                <label class="col-sm-2 col-form-label-sm lbl_left">Product Price</label>
+                <div class="col-sm-3">
+                    <input class="form-check-input" type="radio" name="Daily" id="inlineRadio1" value="Daily">
+                    <label class="col-form-label-sm " for="inlineRadio1">Daily&nbsp;</label>
+                    <input type="text" class="form-control form-control-sm">
+                    <input class="form-check-input" type="radio" name="Monthly" id="inlineRadio2" value="Monthly">
+                    <label class="col-form-label-sm " for="inlineRadio2">Weekly</label>
+                    <input type="text" class="form-control form-control-sm">
+
+                    <input class="form-check-input" type="radio" name="Monthly" id="inlineRadio2" value="Monthly">
+                    <label class="col-form-label-sm " for="inlineRadio2">Monthly</label>
+                    <input type="text" class="form-control form-control-sm">
+                </div>
+            </div>
+            <div class="form-group row" style="margin-bottom: 20px !important;">
+                <label class="col-sm-2 col-form-label-sm lbl_left">Product Type</label>
+                <div class="col-sm-3">
+                    <select class="form-control form-control-sm"></select>
+                </div>
+                <div class="col-sm-7"></div>
+            </div>
+            <div class="form-group row" style="margin-bottom: 20px !important;">
+                <label class="col-sm-2 col-form-label-sm lbl_left">Product Name</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control form-control-sm">
+                </div>
+                <div class="col-sm-2"></div>
+                <label class="col-sm-2 col-form-label-sm lbl_left">Product Manager</label>
+                <div class="col-sm-3">
+                    <select class="form-control form-control-sm"></select>
+                </div>
+            </div>
+            <div class="form-group row" style="margin-bottom: 20px !important;">
+                <label class="col-sm-2 col-form-label-sm lbl_left">Product Description</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control form-control-sm">
+                </div>
+                <div class="col-sm-2"></div>
+                <label class="col-sm-2 col-form-label-sm lbl_left">Revenue Share</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control form-control-sm">
+                </div>
+            </div>
+            <div class="form-group row" style="margin-bottom: 20px !important;">
+                <label class="col-sm-2 col-form-label-sm lbl_left">Start Date</label>
+                <div class="col-sm-3">
+                    <input type="date" class="form-control form-control-sm">
+                </div>
+                <div class="col-sm-2"></div>
+                <label class="col-sm-2 col-form-label-sm lbl_left">End Date</label>
+                <div class="col-sm-3">
+                    <input type="date" class="form-control form-control-sm">
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 10px;">&nbsp;</div>
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-5">
+                    <button type="button" class="btn btn-info" >
+                        <fa-icon [icon]="faAdd"></fa-icon>&nbsp;
+                        Create
+                    </button>
+                    &nbsp;
+                    <button type="button" class="btn btn-light" (click)="reset()" style="margin-left: 5px;">
+                        <fa-icon [icon]="faReset"></fa-icon>&nbsp;
+                        Reset
+                    </button>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+
+        </form>
+
+    </div>
+    <div class="col-sm-1"></div>
+
+</div>

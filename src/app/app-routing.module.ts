@@ -4,6 +4,7 @@ import { CoreComponent } from './core/core.component';
 import { ProductComponent } from './core/product/product.component';
 import { ProductAddComponent } from './core/product/product-add/product-add.component';
 import { ProductSearchComponent } from './core/product/product-search/product-search.component';
+import { ProductUpdateComponent } from './core/product/product-update/product-update.component';
 
 
 const routes: Routes = [
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'product/search',
     component: ProductSearchComponent
+  },
+  {
+    path: 'product/update',
+    component: ProductUpdateComponent
   }
 ];
 
