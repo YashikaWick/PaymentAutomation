@@ -6,6 +6,7 @@ import {ThemePalette} from '@angular/material/core';
 import { User } from '../../user';
 import { CoreService } from '../../core.service';
 import { ProductService } from '../../product.service';
+import { Product } from 'src/app/product';
 
 
 
@@ -32,6 +33,8 @@ export class ProductAddComponent implements OnInit {
 
   isLoading: boolean = true;
   color: ThemePalette = 'accent';
+
+  productModel = new Product(1, 'type1', 'name1', 'descp1', 'Daily', 100, 'revshare1');
 
   constructor(private router:Router, 
     private coreService: CoreService, private productService: ProductService) { }
