@@ -8,6 +8,7 @@ export class Product{
     productType: string;
     productName: string;
     productDescription: string;
+    pricePreference:string;
     productPrice: number;
     productManager: User;
     revenueShare: string;
