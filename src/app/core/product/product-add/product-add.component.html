@@ -31,16 +31,16 @@
 <div class="row">
     <div class="col-sm-1"></div>
     <div class="col-sm-10">
-        <form #productAaddForm = "ngForm">
-            {{productAaddForm.value | json}}
+        <form #productAddForm = "ngForm">
+            {{productAddForm.value | json}}
       <hr>
-        {{productModel.index | json}}
+        {{productModel | json}}
             <div class="form-group row" style="margin-bottom: 2px !important;">
                 <label class="col-sm-2 col-form-label-sm lbl_left">Product Code
                     <span class=required>*</span>
                 </label>
                 <div class="col-sm-3">
-                    <input type="text" class="form-control form-control-sm " name="productCode" required  [ngModel]="productModel.productCode">
+                    <input type="text" class="form-control form-control-sm " name="productCode" required  ngModel>
                     
                 </div>
                 <div class="col-sm-2"></div>
@@ -48,11 +48,11 @@
                     <span class=required>*</span>
                 </label>
                 <div class="col-sm-3">
-                    <input class="form-check-inline" type="radio" name="pricePreference" id="inlineRadio1" value="Daily" [ngModel]="productModel.pricePreference">
+                    <input class="form-check-inline" type="radio" name="pricePreference" id="inlineRadio1" value="Daily">
                     <label class="col-form-label-sm " for="inlineRadio1">Daily&nbsp;</label>
-                    <input class="form-check-inline" type="radio" name="pricePreference" id="inlineRadio2" value="Monthly" [ngModel]="productModel.pricePreference"> 
+                    <input class="form-check-inline" type="radio" name="pricePreference" id="inlineRadio2" value="Monthly"> 
                     <label class="col-form-label-sm " for="inlineRadio2">Monthly</label>
-                    <input type="text" class="form-control form-control-sm" name="productPrice" required [ngModel]="productModel.productPrice">
+                    <input type="text" class="form-control form-control-sm" name="productPrice" requirede>
                 </div>
             </div>
             <div class="form-group row" style="margin-bottom: 20px !important;">
@@ -60,7 +60,7 @@
                     <span class=required>*</span>
                 </label>
                 <div class="col-sm-3">
-                    <select class="form-control form-control-sm" name="productType" required [ngModel]="productModel.productType"></select>
+                    <select class="form-control form-control-sm" name="productType" required ></select>
                 </div>
                 <div class="col-sm-7"></div>
             </div>
@@ -69,7 +69,7 @@
                     <span class=required>*</span>
                 </label>
                 <div class="col-sm-3">
-                    <input type="text" class="form-control form-control-sm" name="productName" required [ngModel]="productModel.productName">
+                    <input type="text" class="form-control form-control-sm" name="productName" required >
                 </div>
                 <div class="col-sm-2"></div>
                 <label class="col-sm-2 col-form-label-sm lbl_left">Product Manager
@@ -86,14 +86,14 @@
                     <span class=required>*</span>
                 </label>
                 <div class="col-sm-3">
-                    <input type="text" class="form-control form-control-sm" name="productDescription" required [ngModel]="productModel.productDescription">
+                    <input type="text" class="form-control form-control-sm" name="productDescription" required ngModel>
                 </div>
                 <div class="col-sm-2"></div>
                 <label class="col-sm-2 col-form-label-sm lbl_left">Revenue Share
                     <span class=required>*</span>
                 </label>
                 <div class="col-sm-3">
-                    <input type="text" class="form-control form-control-sm" name="revenueShare" required [ngModel]="productModel.revenueShare">
+                    <input type="text" class="form-control form-control-sm" name="revenueShare" required ngModel>
                 </div>
             </div>
             <div class="form-group row" style="margin-bottom: 20px !important;">

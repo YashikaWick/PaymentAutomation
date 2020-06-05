@@ -6,6 +6,8 @@ import { ProductAddComponent } from './core/product/product-add/product-add.comp
 import { ProductSearchComponent } from './core/product/product-search/product-search.component';
 import { ProductUpdateComponent } from './core/product/product-update/product-update.component';
 import { ProductListComponent } from './core/product/product-list/product-list.component';
+import { ForeignCurrencyComponent } from './core/foreign-currency/foreign-currency.component';
+import { ForeignCurrencyAddComponent } from './core/foreign-currency/foreign-currency-add/foreign-currency-add.component';
 
 
 const routes: Routes = [
@@ -32,6 +34,14 @@ const routes: Routes = [
   {
     path: 'product/list',
     component: ProductListComponent
+  },
+  {
+    path: 'foreignCurrency',
+    component:ForeignCurrencyComponent
+  },
+  {
+    path: 'foreignCurrency/add',
+    component:ForeignCurrencyAddComponent
   }
   
 ];
