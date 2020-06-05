@@ -14,6 +14,8 @@ import { ProductService } from './core/product.service';
 import { CoreService } from './core/core.service';
 import { AppService } from './app.service';
 import { ProductListComponent } from './core/product/product-list/product-list.component';
+import { ForeignCurrencyComponent } from './foreign-currency/foreign-currency.component';
+import { ForeignCurrencyAddComponent } from './core/foreign-currency/foreign-currency-add/foreign-currency-add.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { ProductListComponent } from './core/product/product-list/product-list.c
     ProductSearchComponent,
     ProductUpdateComponent,
     ProductListComponent,
+    ForeignCurrencyComponent,
+    ForeignCurrencyAddComponent,
     
   ],
   imports: [
