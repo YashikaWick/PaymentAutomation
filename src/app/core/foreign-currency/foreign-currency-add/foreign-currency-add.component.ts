@@ -77,7 +77,7 @@ export class ForeignCurrencyAddComponent implements OnInit {
           }
         },error=>{
           this.errorMsg = "Error Occured";
-          console.log(error);
+          console.log("error:",error);
         }
       );
     }

@@ -17,6 +17,7 @@ import { ProductListComponent } from './core/product/product-list/product-list.c
 import { ForeignCurrencyComponent } from './core/foreign-currency/foreign-currency.component';
 import { ForeignCurrencyAddComponent } from './core/foreign-currency/foreign-currency-add/foreign-currency-add.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FontAwesomeModule,
     FormsModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [AppService, ProductService],
   bootstrap: [AppComponent]
