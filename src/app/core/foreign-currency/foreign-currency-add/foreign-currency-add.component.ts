@@ -4,6 +4,7 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 import { ThemePalette } from '@angular/material/core';
 import { Router } from '@angular/router';
 import { CoreService } from '../../core.service';
+import { ForeignCurrency } from '../../foreign-currency';
 
 @Component({
   selector: 'app-foreign-currency-add',
@@ -18,13 +19,16 @@ export class ForeignCurrencyAddComponent implements OnInit {
   faBack = faBackward;
 
   addForm:FormGroup;
+  isSubmitted: boolean = false;
+
+  foreignCurrency:ForeignCurrency
 
   successMsg: string;
   errorMsg: string;
 
   color: ThemePalette = 'accent';
 
-  isSubmitted: boolean = false;
+  
 
   isLoading:boolean = true;
   
@@ -55,7 +59,8 @@ export class ForeignCurrencyAddComponent implements OnInit {
     this.isSubmitted = true;
 
     if(this.addForm.valid){
-
+      this.foreignCurrency = this.addForm.value;
+      //console.log(this.foreignCurrency);
     }
   }
 
