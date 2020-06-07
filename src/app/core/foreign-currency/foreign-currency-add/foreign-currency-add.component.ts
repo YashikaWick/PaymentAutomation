@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { faPlus, faUndo, faTimes, faBackward } from '@fortawesome/free-solid-svg-icons';
-import { FormGroup } from '@angular/forms';
+import { FormGroup, FormBuilder } from '@angular/forms';
 import { ThemePalette } from '@angular/material/core';
 import { Router } from '@angular/router';
+import { CoreService } from '../../core.service';
 
 @Component({
   selector: 'app-foreign-currency-add',
@@ -23,14 +24,43 @@ export class ForeignCurrencyAddComponent implements OnInit {
 
   color: ThemePalette = 'accent';
 
+  isSubmitted: boolean = false;
+
+  isLoading:boolean = true;
   
-  constructor(private router:Router) { }
+  constructor(private router:Router, private formBuilder:FormBuilder, private coreService:CoreService) { }
 
   ngOnInit(): void {
+
+    this.successMsg = null;
+    this.errorMsg = null;
+
+    this.addForm = this.formBuilder.group({
+      currency:[''],
+      lkrAmount:[''],
+      date:['']
+    })
+
+  }
+
+  get f() {
+    return this.addForm.controls;
+  }
+
+
+  addCurrency(){
+    this.successMsg = null;
+    this.errorMsg = null;
+
+    this.isSubmitted = true;
+
+    if(this.addForm.valid){
+
+    }
   }
 
   reset() {
-    this.addForm.reset({});
+    this.addForm.reset({currency:'', lkrAmount:'', date:''});
     this.successMsg = null;
     this.errorMsg = null;
   }
@@ -38,7 +68,5 @@ export class ForeignCurrencyAddComponent implements OnInit {
   goBack() {
     this.router.navigate(['foreignCurrency'], {skipLocationChange: true}).catch();
   }
-
-
 
 }

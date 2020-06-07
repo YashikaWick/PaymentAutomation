@@ -7,7 +7,7 @@ import { CoreComponent } from './core/core.component';
 import { ProductComponent } from './core/product/product.component';
 import { ProductAddComponent } from './core/product/product-add/product-add.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductSearchComponent } from './core/product/product-search/product-search.component';
 import { ProductUpdateComponent } from './core/product/product-update/product-update.component';
 import { ProductService } from './core/product.service';
@@ -16,6 +16,7 @@ import { AppService } from './app.service';
 import { ProductListComponent } from './core/product/product-list/product-list.component';
 import { ForeignCurrencyComponent } from './core/foreign-currency/foreign-currency.component';
 import { ForeignCurrencyAddComponent } from './core/foreign-currency/foreign-currency-add/foreign-currency-add.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,9 @@ import { ForeignCurrencyAddComponent } from './core/foreign-currency/foreign-cur
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [AppService, ProductService],
   bootstrap: [AppComponent]
